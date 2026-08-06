@@ -21,7 +21,7 @@ public class CorsConfig {
                         .allowedOrigins(
                                 "http://localhost:8100",
                                 "http://localhost:4200",
-                                frontendUrl
+                                "https://https://liftly-ionic.onrender.com/"
                         )
                         .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
