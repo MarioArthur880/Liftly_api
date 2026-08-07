@@ -13,11 +13,11 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/*")
+                registry.addMapping("/**")
                         .allowedOrigins(
-                                "http://localhost:8100/",
-                                "http://localhost:4200/",
-                                "https://liftly-ionic.onrender.com/"
+                                "http://localhost:8100",
+                                "http://localhost:4200",
+                                "https://liftly-ionic.onrender.com"
                         )
                         .allowedMethods(
                                 "GET",
@@ -27,7 +27,7 @@ public class CorsConfig {
                                 "DELETE",
                                 "OPTIONS"
                         )
-                        .allowedHeaders("")
+                        .allowedHeaders("*")
                         .exposedHeaders("Authorization")
                         .allowCredentials(true);
             }
