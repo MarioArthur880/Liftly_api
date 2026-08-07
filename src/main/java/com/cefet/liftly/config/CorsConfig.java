@@ -15,6 +15,7 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
+                                "http://localhost",
                                 "http://localhost:8100",
                                 "http://localhost:4200",
                                 "https://liftly-ionic.onrender.com"
